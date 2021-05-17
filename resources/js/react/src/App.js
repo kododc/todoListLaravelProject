@@ -38,7 +38,7 @@ const App = () => {
 
   // Get Token
   const fetchToken = async (user) => {
-    const res = await fetch('http://127.0.0.1:8000/api/login',{
+    const res = await fetch('api/login',{
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -59,7 +59,7 @@ const App = () => {
 
   // Save User
   const saveUser = async (user) => {
-    const res = await fetch('http://127.0.0.1:8000/api/user-create',{
+    const res = await fetch('api/user-create',{
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -73,7 +73,7 @@ const App = () => {
   // Fetch Todos
   const fetchTodos = async () => {
     
-    const res = await fetch('http://127.0.0.1:8000/api/todos',{
+    const res = await fetch('api/todos',{
       method: 'GET',
       headers: {
         'Content-type': 'application/json',
@@ -88,7 +88,7 @@ const App = () => {
 
   // Fetch Todo
   const fetchTodo = async (id) => {
-    const res = await fetch(`http://127.0.0.1:8000/api/todo/${id}`,{
+    const res = await fetch(`api/todo/${id}`,{
       method: 'GET',
       headers: {
         'Content-type': 'application/json',
@@ -102,7 +102,7 @@ const App = () => {
 
   // Add Todo
   const addTodo = async (todo) => {
-    const res = await fetch('http://127.0.0.1:8000/api/todo',{
+    const res = await fetch('api/todo',{
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -119,7 +119,7 @@ const App = () => {
 
   // Delete Todo
   const deleteTodo = async (id) => {
-    const res = await fetch(`http://127.0.0.1:8000/api/todo/${id}`,{
+    const res = await fetch(`api/todo/${id}`,{
       method: 'DELETE',
       headers: {
         'Content-type': 'application/json',
@@ -139,7 +139,7 @@ const App = () => {
     console.log(todoToToggle.completed)
     const updTodo = { ...todoToToggle, completed: !todoToToggle.completed }
 
-    const res = await fetch(`http://127.0.0.1:8000/api/todo`,{
+    const res = await fetch(`api/todo`,{
       method: 'PUT',
       headers: {
         'Content-type': 'application/json',

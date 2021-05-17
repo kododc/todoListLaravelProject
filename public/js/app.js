@@ -2003,7 +2003,7 @@ var App = function App() {
           switch (_context2.prev = _context2.next) {
             case 0:
               _context2.next = 2;
-              return fetch('http://127.0.0.1:8000/api/login', {
+              return fetch('api/login', {
                 method: 'POST',
                 headers: {
                   'Content-type': 'application/json',
@@ -2051,7 +2051,7 @@ var App = function App() {
           switch (_context3.prev = _context3.next) {
             case 0:
               _context3.next = 2;
-              return fetch('http://127.0.0.1:8000/api/user-create', {
+              return fetch('api/user-create', {
                 method: 'POST',
                 headers: {
                   'Content-type': 'application/json',
@@ -2086,7 +2086,7 @@ var App = function App() {
           switch (_context4.prev = _context4.next) {
             case 0:
               _context4.next = 2;
-              return fetch('http://127.0.0.1:8000/api/todos', {
+              return fetch('api/todos', {
                 method: 'GET',
                 headers: {
                   'Content-type': 'application/json',
@@ -2127,7 +2127,7 @@ var App = function App() {
           switch (_context5.prev = _context5.next) {
             case 0:
               _context5.next = 2;
-              return fetch("http://127.0.0.1:8000/api/todo/".concat(id), {
+              return fetch("api/todo/".concat(id), {
                 method: 'GET',
                 headers: {
                   'Content-type': 'application/json',
@@ -2167,7 +2167,7 @@ var App = function App() {
           switch (_context6.prev = _context6.next) {
             case 0:
               _context6.next = 2;
-              return fetch('http://127.0.0.1:8000/api/todo', {
+              return fetch('api/todo', {
                 method: 'POST',
                 headers: {
                   'Content-type': 'application/json',
@@ -2208,7 +2208,7 @@ var App = function App() {
           switch (_context7.prev = _context7.next) {
             case 0:
               _context7.next = 2;
-              return fetch("http://127.0.0.1:8000/api/todo/".concat(id), {
+              return fetch("api/todo/".concat(id), {
                 method: 'DELETE',
                 headers: {
                   'Content-type': 'application/json',
@@ -2255,7 +2255,7 @@ var App = function App() {
                 completed: !todoToToggle.completed
               });
               _context8.next = 7;
-              return fetch("http://127.0.0.1:8000/api/todo", {
+              return fetch("api/todo", {
                 method: 'PUT',
                 headers: {
                   'Content-type': 'application/json',
